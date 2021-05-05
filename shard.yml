@@ -1,0 +1,9 @@
+name: machineid
+version: 0.1.0
+
+authors:
+  - Francesco Vollero <francesco@vuix.io>
+
+crystal: 0.36.1
+
+license: MIT
