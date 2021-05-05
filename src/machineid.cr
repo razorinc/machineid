@@ -35,6 +35,6 @@ module Machineid
   end
 
   def protectedID(appId : String) : String
-    return Machineid::ProtectedId.protect(appId)
+    return Machineid::ProtectedId.protect(appId, machineid)
   end
 end
