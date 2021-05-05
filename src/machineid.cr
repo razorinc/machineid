@@ -16,21 +16,21 @@ module Machineid
   VERSION = "0.1.0"
   extend self
 
-  def machineid()
+  def machineid
     output = nil
     {% if flag?(:linux) %}
-      output = Machineid::Linux.machineID()
+      output = Machineid::Linux.machineID
     {% end %}
     {% if flag?(:darwin) %}
-      output = Machineid::Darwin.machineID()
+      output = Machineid::Darwin.machineID
     {% end %}
     {% if flag?(:bsd) %}
-      output = Machineid::Bsd.machineID()
+      output = Machineid::Bsd.machineID
     {% end %}
-    return output.chomp()
+    return output.chomp
   end
 
-  def id()
+  def id
     return machineid()
   end
 
@@ -38,4 +38,3 @@ module Machineid
     return Machineid::ProtectedId.protect(appId)
   end
 end
-

@@ -15,4 +15,4 @@ end
 #      Machineid.id.should be_a(String)
 #    end
 #  end
-#end
+# end
