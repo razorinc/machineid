@@ -1,5 +1,7 @@
 name: machineid
 version: 0.1.0
+description: |
+  machineid provides support for reading the unique machine id of most host OS's (without admin privileges)
 
 authors:
   - Francesco Vollero <francesco@vuix.io>
