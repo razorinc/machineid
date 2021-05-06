@@ -1,3 +1,4 @@
+{% if flag?(:bsd) %}
 require "./spec_helper"
 
 describe Machineid do
@@ -10,3 +11,4 @@ describe Machineid do
     end
   end
 end
+{% end %}
