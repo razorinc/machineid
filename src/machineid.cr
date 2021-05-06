@@ -30,11 +30,12 @@ module Machineid
     return output.chomp
   end
 
-  def id
+  def id : String
     return machineid()
   end
 
   def protectedID(appId : String) : String
-    return Machineid::ProtectedId.protect(appId, machineid)
+    return Machineid::ProtectedId.protect(appId,
+                                          machineid)
   end
 end
