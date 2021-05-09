@@ -1,6 +1,6 @@
 # machineid
 
-
+Inspired from Go's [machineid](https://github.com/denisbrodbeck/machineid).
 machineid provides support for reading the unique machine id of most host OS's (without admin privileges)
 
 ## Main Features
@@ -29,11 +29,11 @@ machineid provides support for reading the unique machine id of most host OS's (
 require "machineid"
 ```
 
-### Function: ID() (string, error)
+### Function: ID() (string)
 
 Returns original machine id as a `string`.
 
-### Function: ProtectedID(appID string) (string, error)
+### Function: ProtectedID(appID string)
 
 Returns hashed version of the machine ID as a `string`. The hash is generated in a cryptographically secure way, using a fixed, application-specific key (calculates HMAC-SHA256 of the app ID, keyed by the machine ID).
 
